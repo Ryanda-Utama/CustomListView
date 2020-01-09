@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linlayout"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="5dp"
+    android:weightSum="2"
+    tools:ignore="DisableBaselineAlignment,RtlHardcoded,RtlSymmetry">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.3"
+    android:padding="5dp"
+    >
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:src="@android:color/darker_gray"
+        android:layout_width="90dp"
+        android:layout_height="55dp"
+        android:scaleType="fitCenter"
+        android:layout_marginEnd="8dp"
+        tools:ignore="ContentDescription" />
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_marginEnd="@+id/imgView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1.7"
+        android:orientation="vertical"
+        >
+
+     <TextView
+         android:id="@+id/text1"
+         tools:text="@string/country_name"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Nama Negara"
+         android:textColor="#000"
+         android:textSize="18sp"
+         android:textStyle="bold"
+         tools:ignore="HardcodedText,SpUsage" />
+        
+    <TextView
+        tools:text="@string/country_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text2"
+        android:text="Detail Negara"
+        android:maxLines="2"
+        android:textSize="11dp"
+        tools:ignore="HardcodedText,SmallSp,SpUsage" />
+
+    </LinearLayout>
+
+</LinearLayout>
